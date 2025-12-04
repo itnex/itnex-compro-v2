@@ -60,7 +60,7 @@ const VisionMissionSection = () => {
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
             Visi, Misi &{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-chart-1">
+            <span className="text-primary">
               Filosofi
             </span>
           </h2>

@@ -34,32 +34,32 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "info@itnex.co.id",
-      href: "mailto:info@itnex.co.id",
+      value: "infinitytechnextsolution@gmail.com",
+      href: "mailto:infinitytechnextsolution@gmail.com",
       gradient: "from-blue-500 to-cyan-400",
     },
     {
       icon: Phone,
       label: "Telepon",
-      value: "+62 812-3456-7890",
-      href: "tel:+6281234567890",
+      value: "+62 895-3608-38458",
+      href: "tel:+62895360838458",
       gradient: "from-violet-500 to-purple-400",
     },
     {
       icon: MapPin,
       label: "Lokasi",
-      value: "Jakarta, Indonesia",
+      value: "Tangerang Selatan, Indonesia",
       href: "#",
       gradient: "from-emerald-500 to-teal-400",
     },
   ];
 
   return (
-    <section id="kontak" className="py-24 lg:py-32 bg-background relative overflow-hidden">
+    <section id="kontak" className="py-16 sm:py-24 lg:py-32 bg-background relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-chart-2/5 rounded-full blur-3xl" />
+        <div className="absolute top-0 left-1/4 w-64 sm:w-96 h-64 sm:h-96 bg-primary/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-48 sm:w-80 h-48 sm:h-80 bg-chart-2/5 rounded-full blur-3xl" />
       </div>
 
       {/* Dot pattern */}
@@ -70,38 +70,38 @@ const ContactSection = () => {
         }} />
       </div>
 
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
-        <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 mb-4 text-sm font-medium text-primary bg-primary/10 rounded-full">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-10 sm:mb-16">
+          <span className="inline-block px-3 sm:px-4 py-1.5 sm:py-2 mb-3 sm:mb-4 text-xs sm:text-sm font-medium text-primary bg-primary/10 rounded-full">
             Kontak
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 sm:mb-6 px-2">
             Mari{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-chart-1">
+            <span className="text-primary">
               Terhubung
             </span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+          <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
             Siap membantu Anda dengan solusi teknologi terbaik. Jangan ragu untuk menghubungi kami.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 sm:gap-12 lg:gap-8">
           {/* Contact Info */}
-          <div className="lg:col-span-2 space-y-8">
-            <div className="space-y-6">
+          <div className="lg:col-span-2 space-y-6 sm:space-y-8">
+            <div className="space-y-4 sm:space-y-6">
               {contactInfo.map((item, index) => (
                 <a
                   key={index}
                   href={item.href}
-                  className="group flex items-center gap-5 p-5 rounded-2xl bg-card border border-border hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 hover:-translate-y-1"
+                  className="group flex items-center gap-3 sm:gap-5 p-4 sm:p-5 rounded-xl sm:rounded-2xl bg-card border border-border hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 hover:-translate-y-1"
                 >
-                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${item.gradient} flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300`}>
-                    <item.icon className="w-6 h-6 text-primary-foreground" />
+                  <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl bg-gradient-to-br ${item.gradient} flex items-center justify-center flex-shrink-0 shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-all duration-300`}>
+                    <item.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary-foreground" />
                   </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground mb-1">{item.label}</p>
-                    <p className="text-foreground font-semibold group-hover:text-primary transition-colors duration-200">
+                  <div className="min-w-0">
+                    <p className="text-xs sm:text-sm text-muted-foreground mb-0.5 sm:mb-1">{item.label}</p>
+                    <p className="text-sm sm:text-base text-foreground font-semibold group-hover:text-primary transition-colors duration-200 truncate">
                       {item.value}
                     </p>
                   </div>
@@ -110,24 +110,24 @@ const ContactSection = () => {
             </div>
 
             {/* Map */}
-            <div className="rounded-3xl overflow-hidden border border-border shadow-lg">
+            <div className="rounded-2xl sm:rounded-3xl overflow-hidden border border-border shadow-lg">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253840.65295081!2d106.6894306!3d-6.2293866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.259508751018!2d106.6566583747533!3d-6.238701361577383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f59945e69fb3%3A0x5e7aff06e79fe417!2sTangerang%20Selatan%2C%20Tangerang%20Selatan%20City%2C%20Banten!5e0!3m2!1sen!2sid!4v1733280416311!5m2!1sen!2sid"
                 width="100%"
-                height="200"
+                height="180"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="ITNEX Location"
-                className="grayscale hover:grayscale-0 transition-all duration-500"
+                className="transition-all duration-500 sm:h-[200px]"
               />
             </div>
           </div>
 
           {/* Contact Form */}
           <div className="lg:col-span-3">
-            <div className="relative bg-card rounded-3xl border border-border p-8 lg:p-10 shadow-xl overflow-hidden">
+            <div className="relative bg-card rounded-2xl sm:rounded-3xl border border-border p-5 sm:p-8 lg:p-10 shadow-xl overflow-hidden">
               {/* Decorative gradient */}
               <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-primary/10 to-transparent rounded-full blur-2xl" />
               
